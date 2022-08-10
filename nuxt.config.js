@@ -56,7 +56,7 @@ export default {
     baseURL: '/',
   },
   router: {
-    base: '/its-ash/',
+    base: '/organic-verse-app-webview/',
     linkExactActiveClass: 'active'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
