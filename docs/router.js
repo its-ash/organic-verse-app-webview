@@ -5,8 +5,8 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _10da6f30 = () => interopDefault(import('../pages/Cart.vue' /* webpackChunkName: "pages/Cart" */))
-const _7edb648c = () => interopDefault(import('../pages/Index.vue' /* webpackChunkName: "pages/Index" */))
 const _598da698 = () => interopDefault(import('../pages/Profile/Index.vue' /* webpackChunkName: "pages/Profile/Index" */))
+const _49202dda = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -14,7 +14,7 @@ Vue.use(Router)
 
 export const routerOptions = {
   mode: 'history',
-  base: '/',
+  base: '/organic-verse-app-webview/',
   linkActiveClass: 'nuxt-link-active',
   linkExactActiveClass: 'active',
   scrollBehavior,
@@ -24,13 +24,13 @@ export const routerOptions = {
     component: _10da6f30,
     name: "Cart"
   }, {
-    path: "/Index",
-    component: _7edb648c,
-    name: "Index"
-  }, {
     path: "/Profile/Index",
     component: _598da698,
     name: "Profile-Index"
+  }, {
+    path: "/",
+    component: _49202dda,
+    name: "index"
   }],
 
   fallback: false

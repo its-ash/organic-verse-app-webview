@@ -7,17 +7,17 @@
     "_name": "_10da6f30"
   },
   {
-    "name": "Index",
-    "path": "/Index",
-    "component": "/Users/ashvinijangid/Desktop/organic_verse_app_webview/pages/Index.vue",
-    "chunkName": "pages/Index",
-    "_name": "_7edb648c"
-  },
-  {
     "name": "Profile-Index",
     "path": "/Profile/Index",
     "component": "/Users/ashvinijangid/Desktop/organic_verse_app_webview/pages/Profile/Index.vue",
     "chunkName": "pages/Profile/Index",
     "_name": "_598da698"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/ashvinijangid/Desktop/organic_verse_app_webview/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_49202dda"
   }
 ]
