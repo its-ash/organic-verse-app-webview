@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Cart",
+    "path": "/Cart",
+    "component": "/Users/ashvinijangid/Desktop/organic_verse_app_webview/pages/Cart.vue",
+    "chunkName": "pages/Cart",
+    "_name": "_10da6f30"
+  },
+  {
+    "name": "Index",
+    "path": "/Index",
+    "component": "/Users/ashvinijangid/Desktop/organic_verse_app_webview/pages/Index.vue",
+    "chunkName": "pages/Index",
+    "_name": "_7edb648c"
+  },
+  {
+    "name": "Profile-Index",
+    "path": "/Profile/Index",
+    "component": "/Users/ashvinijangid/Desktop/organic_verse_app_webview/pages/Profile/Index.vue",
+    "chunkName": "pages/Profile/Index",
+    "_name": "_598da698"
+  }
+]

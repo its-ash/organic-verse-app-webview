@@ -4,6 +4,7 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  buildDir: 'docs',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -55,6 +56,7 @@ export default {
     baseURL: '/',
   },
   router: {
+    base: '/its-ash/',
     linkExactActiveClass: 'active'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
