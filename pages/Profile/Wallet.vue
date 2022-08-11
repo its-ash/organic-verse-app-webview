@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="col-12 fw-bold text-dark py-5" style="font-size: 100px">
-        ₹100
+        ₹{{ wallet }}
       </div>
       <div class="col-4">
         <button class="btn btn-success">Add Money</button>
@@ -23,7 +23,12 @@
 
 <script>
 export default {
-  name: "Wallet"
+  name: "Wallet",
+  computed: {
+    wallet() {
+      return this.$store.state.wallet;
+    }
+  }
 }
 </script>
 

@@ -4,30 +4,32 @@ export const state = () => ({
   products: [
     {
       id: 1,
-      name: "Apple",
-      price: 100,
-      description: "This is an apple",
+      name: "Tomato",
+      price: 80,
+      img: 'veggie/tomato.jpg',
     },
     {
       id: 2,
-      name: "Orange",
-      price: 200,
-      description: "This is an orange",
+      name: "Cauliflower",
+      price: 80,
+      img: 'veggie/cauliflower.jpg',
     },
     {
       id: 3,
-      name: "Banana",
-      price: 300,
-      description: "This is a banana",
+      name: "Chilli",
+      price: 30,
+      img: 'veggie/Chilli.jpg',
     },
     {
       id: 4,
-      name: "Grape",
-      price: 400,
-      description: "This is a grape",
+      name: "Potato",
+      price: 40,
+      img: 'veggie/potato.jpg',
     }
   ],
-  cart: []
+  cart: [],
+  wallet: 100,
+  user: {},
 })
 
 export const getters = {}
@@ -46,10 +48,16 @@ export const mutations = {
   },
   removeFromCart(state, product) {
     state.cart = state.cart.filter(item => item.id !== product.id)
+  },
+  setUser(state, user) {
+    state.user = user
   }
 }
 
 export const actions = {
+  setUser({commit}, product) {
+    commit("setUser", product);
+  },
   addToCart({commit}, product) {
     commit("addToCart", product);
   },

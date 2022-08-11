@@ -72,7 +72,6 @@
   padding: 10px;
   border-radius: 5px;
 
-  background-color: $grey--three;
   box-shadow: 0 4px 6px rgba($black, 0.10);
 
   &__image {
@@ -238,7 +237,7 @@
   }
 
   &__content {
-    flex-basis: calc(100% - 190px);
+    flex-basis: calc(100% - 205px);
 
     .title {
       font-size: 16px;

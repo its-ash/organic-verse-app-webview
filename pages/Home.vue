@@ -1,13 +1,16 @@
 <template>
   <section class="py-2 pt-5">
-    <h2 class="text-center fw-bold py-2">Our Vegetables</h2>
+    <div class="row justify-content-center">
+      <img src="@/assets/organicVerse.png" class="w-50 text-center" alt="">
+    </div>
+    <h2 class="text-center py-2">Our Vegetables</h2>
     <div class="products-area">
       <div class="container">
         <div class="row px-4">
           <div v-for="product in products" class="col-6">
             <div class="grid-product space-mb--20">
               <div class="grid-product__image">
-                <img src="@/assets/img/products/product1.png" class="img-fluid" alt="">
+                <img :src="product.img" style="height: 140px;" class="img-fluid" alt="">
               </div>
               <div class="row">
                 <div class="col-9 px-0 ps-3">
@@ -18,7 +21,7 @@
                     <span class="discounted-price">₹{{ product.price }}</span>
                   </div>
                 </div>
-                <div class="col-1 px-0 pe-4 mt-2">
+                <div class="col-1 px-0 pe-4 mt-4">
                   <button @click="addToCart(product)" class="btn btn-primary btn-block px-2 py-0">+</button>
                 </div>
               </div>
