@@ -2,7 +2,7 @@
   <section class="py-5 w-100">
     <div class="row d-flex justify-content-center">
       <h2 class="text-center fw-bold">Cart</h2>
-      <img v-if="products.length === 0" src="/emptyCart.png" class="p-5 w-50 text-center" alt="">
+      <img v-if="products.length === 0" src="@/assets/emptyCart.png" class="p-5 w-50 text-center" alt="">
     </div>
     <div class="cart-product-area">
       <div v-for="product in products" class="cart-product border-bottom--medium">

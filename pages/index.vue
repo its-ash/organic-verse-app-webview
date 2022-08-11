@@ -1,7 +1,7 @@
 <template>
   <div class="row align-content-center justify-content-center">
 
-    <img src="/OrganicVerseLogo.png" alt="">
+    <img src="@/assets/OrganicVerseLogo.png" alt="">
     <div class="col-12 text-center h1 text-dark fw-bold">
       Welcome to the <br> <br> Organic Verse
     </div>
