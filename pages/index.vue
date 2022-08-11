@@ -20,26 +20,26 @@ export default {
   name: "index",
   methods: {
     goToHome() {
-      localStorage.clear();
-      const provider = new GoogleAuthProvider()
-      this.$fire.auth.signInWithPopup(provider)
-        .then((result) => {
-          // const credential = GoogleAuthProvider.credentialFromResult(result)
-          this.$store.dispatch('setUser', JSON.parse(JSON.stringify(result.user)))
-          // const credential = GoogleAuthProvider.credentialFromResult(result)
-          // const token = credential.accessToken
-          // const user = result.user
-          localStorage.setItem("isLoggedIn", "true");
-          localStorage.setItem("user", JSON.stringify(result.user));
-          this.$router.push({name: 'Home'});
-        })
+      // localStorage.clear();
+      // const provider = new GoogleAuthProvider()
+      // this.$fire.auth.signInWithPopup(provider)
+      //   .then((result) => {
+      //     // const credential = GoogleAuthProvider.credentialFromResult(result)
+      //     this.$store.dispatch('setUser', JSON.parse(JSON.stringify(result.user)))
+      //     // const credential = GoogleAuthProvider.credentialFromResult(result)
+      //     // const token = credential.accessToken
+      //     // const user = result.user
+      localStorage.setItem("isLoggedIn", "true");
+      // localStorage.setItem("user", JSON.stringify(result.user));
+      this.$router.push({name: 'Home'});
+      // })
     }
   },
   created() {
-    // if (localStorage.getItem("isLoggedIn") === "true") {
-    //   this.$store.commit('setUser', JSON.parse(localStorage.getItem("user")))
-    //   this.$router.push({name: 'Home'});
-    // }
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      this.$store.commit('setUser', JSON.parse(localStorage.getItem("user")))
+      this.$router.push({name: 'Home'});
+    }
   }
 }
 </script>
