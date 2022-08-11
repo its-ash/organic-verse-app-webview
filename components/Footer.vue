@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer-nav-wrapper">
-      <NuxtLink :to="{name: 'Index'}" class="footer-nav-single">
+      <NuxtLink :to="{name: 'index'}" class="footer-nav-single">
         <div class="menu-wrapper">
           <img src="@/assets/img/icons/home.svg" alt="">
           <span>Home</span>

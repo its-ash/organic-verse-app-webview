@@ -18,10 +18,11 @@
       </div>
     </div>
     <div class="col-12 px-5">
-      <div class="w-100 shadow-sm p-2 my-2 bg-color--grey fw-bold d-flex align-items-center">
+      <nuxt-link :to="{name: 'Profile-Wallet'}"
+                 class="w-100 shadow-sm p-2 my-2 bg-color--grey fw-bold d-flex align-items-center">
         <span class="mdi mdi-wallet-outline fs-3"></span>
         <span class="px-3">Wallet Balance : ₹100</span>
-      </div>
+      </nuxt-link>
       <div class="w-100 shadow-sm p-2 my-2 bg-color--grey fw-bold d-flex align-items-center">
         <span class="mdi mdi-basket-check-outline fs-3"></span>
         <span class="px-3">My Orders</span>
