@@ -18,7 +18,7 @@ export const state = () => ({
       id: 3,
       name: "Chilli",
       price: 30,
-      img: 'veggie/Chilli.jpg',
+      img: 'veggie/chilli.jpg',
     },
     {
       id: 4,
@@ -29,7 +29,10 @@ export const state = () => ({
   ],
   cart: [],
   wallet: 100,
-  user: {},
+  user: {
+    displayName: "ABC XYZ",
+    email: "ash@gmail.com"
+  },
 })
 
 export const getters = {}

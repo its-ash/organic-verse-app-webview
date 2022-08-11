@@ -5,7 +5,7 @@
         <div class="card-body">
           <div class="row ">
             <div class="col-6 px-0">
-              <img class="rounded" style="height: 100px" :src="user.photoURL" alt="">
+              <img class="rounded" style="height: 100px" src="@/assets/img/profile.jpg" alt="">
             </div>
             <div class="col-6 pt-4 px-0">
               <div class="title-wrap">
